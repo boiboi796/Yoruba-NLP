@@ -1,0 +1,31 @@
+package nlp;
+
+public enum validatorEnum {
+        SUBJECT,
+        VERB,
+        OBJECT,
+        AUXILIARY,
+        NEGATION,
+        FOCUS_MARKER,
+        QUESTION_MARKER,
+        WH_WORD,
+        CONJUNCTION,
+        SUBORDINATOR,
+        RELATIVE_MARKER,
+        PREPOSITION,
+        DETERMINER,
+        ADJECTIVE,
+        ADVERB,
+        PRONOUN,
+        NOUN,
+        INTERJECTION,
+        SERIAL_VERB,
+        CONDITIONAL_MARKER,
+        MODAL,
+        PARTICLE,
+        TIME_MARKER,
+        LOCATION_MARKER,
+        QUANTIFIER,
+        POSSESSIVE,
+        VOCATIVE
+}

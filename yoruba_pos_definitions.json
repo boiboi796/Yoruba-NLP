@@ -1,0 +1,167 @@
+{
+  "language": "Yoruba",
+  "pos_definitions": [
+    {
+      "tag": "SUBJECT",
+      "description": "The doer or topic of the sentence",
+      "filled_by": ["NOUN", "PRONOUN"],
+      "examples": ["Àdé", "mo", "wọn", "ọmọ"]
+    },
+    {
+      "tag": "VERB",
+      "description": "The main action or state word; no inflection in Yoruba",
+      "filled_by": ["verb"],
+      "examples": ["lọ", "jẹ", "wà", "rí", "sọ", "gbé"]
+    },
+    {
+      "tag": "OBJECT",
+      "description": "The receiver of the action, comes after the verb",
+      "filled_by": ["NOUN", "PRONOUN"],
+      "examples": ["ìwé", "omi", "i", "rẹ̀", "ọmọ"]
+    },
+    {
+      "tag": "AUXILIARY",
+      "description": "Pre-verbal marker that shows aspect or mood; not tense",
+      "filled_by": ["marker"],
+      "examples": ["ń (progressive)", "ti (perfective)", "máa ń (habitual)", "yóò (future)", "bá (conditional mood)"]
+    },
+    {
+      "tag": "NEGATION",
+      "description": "Pre-verbal marker that negates the sentence",
+      "filled_by": ["negator"],
+      "examples": ["kò", "kì í (habitual negation)", "má (prohibitive)"]
+    },
+    {
+      "tag": "FOCUS_MARKER",
+      "description": "Post-nominal particle that marks focus or acts as copula",
+      "filled_by": ["focus"],
+      "examples": ["ni", "ní"]
+    },
+    {
+      "tag": "QUESTION_MARKER",
+      "description": "Sentence-initial particle that marks a yes/no question",
+      "filled_by": ["question particle"],
+      "examples": ["ṣé", "ṣe"]
+    },
+    {
+      "tag": "WH_WORD",
+      "description": "A question word asking about a person, thing, place, time, or manner",
+      "filled_by": ["wh-expression"],
+      "examples": ["ta (who)", "kí (what)", "níbo (where)", "nígbà wo (when)", "ẹ̀sẹ wo (why)", "bí wo (how)"]
+    },
+    {
+      "tag": "CONJUNCTION",
+      "description": "Connects two independent clauses or words of equal rank",
+      "filled_by": ["coordinating conjunction"],
+      "examples": ["àti (and)", "tàbí (or)", "ṣùgbọ́n (but)", "àmọ́ (however)"]
+    },
+    {
+      "tag": "SUBORDINATOR",
+      "description": "Introduces a dependent clause",
+      "filled_by": ["complementizer", "subordinating conjunction"],
+      "examples": ["pé (that)", "nítorí (because)", "nígbà (when)", "bí (as/if)"]
+    },
+    {
+      "tag": "RELATIVE_MARKER",
+      "description": "Introduces a relative clause modifying a noun; always the same form",
+      "filled_by": ["relative particle"],
+      "examples": ["tí"]
+    },
+    {
+      "tag": "PREPOSITION",
+      "description": "Links a noun to a verb or another noun to show location or direction",
+      "filled_by": ["preposition"],
+      "examples": ["ní (at/in)", "sí (to)", "fún (for)", "láti (from)", "pẹ̀lú (with)"]
+    },
+    {
+      "tag": "DETERMINER",
+      "description": "Points to a specific noun; Yoruba has no articles, only demonstratives",
+      "filled_by": ["demonstrative"],
+      "examples": ["yìí (this)", "yẹn (that)", "náà (the same / definite emphasis)"]
+    },
+    {
+      "tag": "ADJECTIVE",
+      "description": "Describes a noun; comes after the noun in Yoruba",
+      "filled_by": ["adjective"],
+      "examples": ["pupa (red)", "tóbi (big)", "funfun (white)", "kékeré (small)"]
+    },
+    {
+      "tag": "ADVERB",
+      "description": "Modifies a verb or adjective to show manner, degree, or frequency",
+      "filled_by": ["adverb"],
+      "examples": ["jẹjẹ (gently)", "púpọ̀ (very/much)", "yára (quickly)", "lẹ́ẹ̀mejì (twice)"]
+    },
+    {
+      "tag": "PRONOUN",
+      "description": "Replaces a noun in subject or object position; tone-distinct forms exist",
+      "filled_by": ["pronoun"],
+      "examples": ["mo/mi (I/me)", "o/ọ (you)", "ó (he/she/it)", "a (we)", "ẹ (you PL)", "wọn (they/them)"]
+    },
+    {
+      "tag": "NOUN",
+      "description": "A person, place, thing, or idea; no gender or case marking in Yoruba",
+      "filled_by": ["noun"],
+      "examples": ["ọmọ (child)", "ilé (house)", "omi (water)", "Àdé (proper name)", "ọjà (market)"]
+    },
+    {
+      "tag": "INTERJECTION",
+      "description": "A standalone word expressing emotion, greeting, or discourse acknowledgment",
+      "filled_by": ["interjection", "discourse particle"],
+      "examples": ["ẹ̀hẹ̀n (I see / yes)", "ẹ̀jọ́ (please)", "àárọ̀ (good morning)", "ó dì e (goodbye)"]
+    },
+    {
+      "tag": "SERIAL_VERB",
+      "description": "A second or third verb chained after the first with no conjunction; shares the same subject",
+      "filled_by": ["verb root"],
+      "examples": ["wá (come) in 'mú wá' (bring)", "lọ (go) in 'gbé lọ' (carry away)", "rà (buy) in 'lọ rà' (go buy)"]
+    },
+    {
+      "tag": "CONDITIONAL_MARKER",
+      "description": "Marks the start of an if-clause (protasis)",
+      "filled_by": ["conditional particle"],
+      "examples": ["bí (if)", "tí (if/when — conditional use)"]
+    },
+    {
+      "tag": "MODAL",
+      "description": "Expresses ability, obligation, or future possibility",
+      "filled_by": ["modal auxiliary"],
+      "examples": ["lè (can/may)", "gbọdọ̀ (must)", "yóò / á (will/future)", "ní láti (have to)"]
+    },
+    {
+      "tag": "PARTICLE",
+      "description": "A small word that adds politeness, direction, or discourse tone",
+      "filled_by": ["pragmatic particle", "directional particle"],
+      "examples": ["o (politeness address)", "mà (contrast/anyway)", "jẹ́ (let's — hortative)", "wá / lọ (come/go — directional)"]
+    },
+    {
+      "tag": "TIME_MARKER",
+      "description": "A word or phrase indicating when something happens",
+      "filled_by": ["time adverbial", "temporal noun phrase"],
+      "examples": ["lánàá (yesterday)", "ọ̀la (tomorrow)", "ní báyìí (now)", "ní òru (at night)", "nígbà tí (when)"]
+    },
+    {
+      "tag": "LOCATION_MARKER",
+      "description": "A word or phrase indicating where something happens",
+      "filled_by": ["locative adverbial", "prepositional phrase"],
+      "examples": ["níbẹ̀ (there)", "níbí (here)", "ní ilé (at home)", "ní Èkó (in Lagos)", "sí ọjà (to the market)"]
+    },
+    {
+      "tag": "QUANTIFIER",
+      "description": "Expresses amount, number, or quantity",
+      "filled_by": ["numeral", "quantifier word"],
+      "examples": ["gbogbo (all)", "díẹ̀ (some/few)", "ọ̀pọ̀lọpọ̀ (many)", "mẹ́ta (three)", "kan (one/a)"]
+    },
+    {
+      "tag": "POSSESSIVE",
+      "description": "Shows ownership; follows the noun it modifies in Yoruba",
+      "filled_by": ["possessive pronoun", "genitive noun phrase"],
+      "examples": ["mi (my)", "rẹ (your)", "rẹ̀ (his/her)", "wa (our)", "Àdé (Ade's — by juxtaposition)"]
+    },
+    {
+      "tag": "VOCATIVE",
+      "description": "A word used to directly address someone; usually clause-initial or final",
+      "filled_by": ["noun"],
+      "examples": ["Àdé!", "ọ̀rẹ́ mi (my friend)", "ẹ̀gbọ́n (elder)", "màámi (mother)"]
+    }
+  ]
+}

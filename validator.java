@@ -3,7 +3,7 @@ import java.util.*;
 
 
 public class validator {
-    public ArrayList<String> determineSentenceType(ArrayList lemmatizedSentence){
+    public static ArrayList<String> determineSentenceType(ArrayList lemmatizedSentence){
         ArrayList<String> sentenceTypePredict = new ArrayList<>();
         if (lemmatizedSentence.toArray().length>1&&lemmatizedSentence.toArray().length<6)
             sentenceTypePredict.add("simple_sentence");
@@ -27,83 +27,5 @@ public class validator {
         }
 
         return sentenceTypePredict;
-    }
-    public HashMap<String,List<Enum>> getRuleBreakDown(){
-        HashMap<String, List<Enum>> lookupWords = new HashMap<>();
-        lookupWords.put("simple_sentence",
-                Arrays.asList(validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("focused_simple",
-                Arrays.asList(validatorEnum.OBJECT,
-                        validatorEnum.FOCUS_MARKER,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB));
-        lookupWords.put("auxiliary_sentence",
-                Arrays.asList(validatorEnum.SUBJECT,
-                        validatorEnum.AUXILIARY,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("negative_sentence",
-                Arrays.asList(validatorEnum.SUBJECT,
-                        validatorEnum.NEGATION,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("question_sentence",
-                Arrays.asList(validatorEnum.QUESTION_MARKER,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("wh_questions",
-                Arrays.asList(validatorEnum.WH_WORD,
-                        validatorEnum.FOCUS_MARKER,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("serial_verb_sentence",
-                Arrays.asList(validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.SERIAL_VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("compound_sentence",
-                Arrays.asList(validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT,
-                        validatorEnum.CONJUNCTION,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("complex_sentence",
-                Arrays.asList(validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.SUBORDINATOR,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("relative_clause_sentence",
-                Arrays.asList(validatorEnum.NOUN,
-                        validatorEnum.RELATIVE_MARKER,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-        lookupWords.put("conditional_sentence",
-                Arrays.asList(validatorEnum.CONDITIONAL_MARKER,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB));
-        lookupWords.put("compound_complex_sentence",
-                Arrays.asList(validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT,
-                        validatorEnum.RELATIVE_MARKER,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.CONJUNCTION,
-                        validatorEnum.SUBJECT,
-                        validatorEnum.VERB,
-                        validatorEnum.OBJECT));
-
-        return lookupWords;
     }
 }
